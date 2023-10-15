@@ -16,8 +16,8 @@
 # limitations under the License.
 #
 
+sleep 60
 set -eo pipefail
-
 REQUIREMENTS_LOCAL="/app/docker/requirements-local.txt"
 # If Cypress run – overwrite the password for admin and export env variables
 if [ "$CYPRESS_CONFIG" == "true" ]; then
